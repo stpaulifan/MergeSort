@@ -18,7 +18,7 @@ public class MergeSort {
 	 * @param rechts
 	 */
 	public static void sort(int Array[], int links, int rechts) {
-		// Divide and sort Array in zwei Hälften
+		// Divide and sort Array in zwei Haelften
 
 		// wenn l nicht kleiner r --> nur ein Wert --> Ende
 		if (links < rechts) {
@@ -53,7 +53,7 @@ public class MergeSort {
 		// Erstellen HilfsArrays
 		int[] HilfsArray = new int[array.length];
 
-		// Sortierte Teilarrays in Hilfsarray übergeben
+		// Sortierte Teilarrays in Hilfsarray uebergeben
 		for (int i = links; i <= rechts; ++i)
 			HilfsArray[i] = array[i];
 
