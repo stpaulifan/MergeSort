@@ -11,7 +11,7 @@ import java.util.Arrays;
 public class MergeSort {
 
 	/**
-	 * Der Sort Prozess mit Divide Am Ende Aufruf des Merg Prozesses
+	 * Der Sort Prozess mit Divide Am Ende Aufruf des Merge Prozesses
 	 * 
 	 * @param Arr
 	 * @param links
