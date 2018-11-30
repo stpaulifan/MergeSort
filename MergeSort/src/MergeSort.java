@@ -5,7 +5,7 @@ import java.util.Arrays;
  * @author stpaulifan
  * @version 1.00, 30.11.2018
  * 
- *          MergeSort
+ *          MergeSort 
  */
 
 public class MergeSort {
