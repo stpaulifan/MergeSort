@@ -18,14 +18,14 @@ public class MergeSort {
 	 * @param rechts
 	 */
 	public static void sort(int Array[], int links, int rechts) {
-		// Divide and sort Array in zwei Hälften
+		// Divide and sort Array in zwei HÃ¤lften
 
 		// wenn l nicht kleiner r --> nur ein Wert --> Ende
 		if (links < rechts) {
 			// Ermittlung der Mitte des Arrays
 			int mitte = (links + rechts) / 2;
 
-			// Sortierung der beiden Hälften
+			// Sortierung der beiden HÃ¤lften
 			sort(Array, links, mitte);
 			sort(Array, mitte + 1, rechts);
 
@@ -37,8 +37,8 @@ public class MergeSort {
 	/**
 	 * 
 	 * 
-	 * Der Merge Prozess mit dem Hilfsarray Beide Arrays durchindexen und prüfen
-	 * welcher Wert größer
+	 * Der Merge Prozess mit dem Hilfsarray Beide Arrays durchindexen und prÃ¼fen
+	 * welcher Wert grÃ¶ÃŸer
 	 * 
 	 * @param array
 	 * @param links
@@ -51,7 +51,7 @@ public class MergeSort {
 		// Erstellen HilfsArrays
 		int[] HilfsArray = new int[array.length];
 
-		// Sortierte Teilarrays in Hilfsarray übergeben
+		// Sortierte Teilarrays in Hilfsarray Ã¼bergeben
 		for (int i = links; i <= rechts; ++i)
 			HilfsArray[i] = array[i];
 
@@ -62,7 +62,7 @@ public class MergeSort {
 		int arrayIndex = links;
 
 		
-		// Solange bis Indexwert der SubArrays kleiner als Länge ist
+		// Solange bis Indexwert der SubArrays kleiner als LÃ¤nge ist
 		while (indexLinkesArray <= mitte && indexRechtesArray <= rechts) {
 
 			// Werte beider Arrays vergleichen und den kleineren in Array einsetzen
@@ -76,25 +76,19 @@ public class MergeSort {
 				indexRechtesArray++;
 
 			}
-			// ArrayIndex hochzählen
+			// ArrayIndex hochzÃ¤hlen
 			arrayIndex++;
-//System.out.println(Arrays.toString(array));
-//System.out.println(Arrays.toString(HilfsArray));
 		}
 
 		
 		
-		//Falls noch weitere Werte übrig sind
+		//Falls noch weitere Werte Ã¼brig sind
 		int werteUebrig = mitte - indexLinkesArray;
 		for (int i = 0; i <= werteUebrig; i++) {
 
 			array[arrayIndex + i] = HilfsArray[indexLinkesArray + i];
 
 		}
-//
-//		System.out.println(Arrays.toString(array));
-//		System.out.println(Arrays.toString(HilfsArray));
-//		System.out.println(Arrays.toString(HilfsArray));
 	}
 
 	/**
